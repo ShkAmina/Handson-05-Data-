@@ -12,9 +12,9 @@ const io = require('socket.io')(http,{
     cors: {
         origin: "*"
     }
-})
+});
 
-app.listen(port, () => {
+io.listen(port, () => {
     console.log(`Server is running in Port...${port}`)
 });
 
